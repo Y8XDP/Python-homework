@@ -7,4 +7,4 @@ def printLetters(str):
             time.sleep(0.3)
         print("\n")
 
-printLetters("Дима Петух".upper())
+printLetters("Егор Петух".upper())
