@@ -12,11 +12,11 @@ while fr < 0 or fr > len(mass):
     elif fr > len(mass):
         print("Не больше количества элементов массива")
 
-while to < 0 or fr > len(mass):
+while to < 0 or to > len(mass):
     to = int(input())
-    if fr < 0:
+    if to < 0:
         print("Не меньше 0")
-    elif fr > len(mass):
+    elif to > len(mass):
         print("Не больше количества элементов массива")
 
 for i in range(fr, to):
