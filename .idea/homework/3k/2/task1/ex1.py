@@ -1,11 +1,15 @@
 mass = [1, 3, 4, 5, 9, 10, 2, -6, -9, 90, 1000, 80, -24]
 
-#print(min(mass)) можно в одну строку
-
 min = mass[0]
+minIndex = 0;
+print("Начальный массив: " + str(mass))
 
-for i in mass:
-    if min > i:
-        min = i;
+for i in range(len(mass)):
+    if min > mass[i]:
+        min = mass[i];
+        minIndex = i
 
-print(min)
+del mass[minIndex]
+
+print("Минимальный элемент в списке с индексом " + str(minIndex) + " имеет значение " + str(min))
+print("Конечный массив: " + str(mass))

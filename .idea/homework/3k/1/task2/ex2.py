@@ -10,12 +10,12 @@ for i in s:
     else:
         t += str(i)
 
-print(mass)
-
 max = mass[0]
+
+print("Из строки " + s + " собран массив: " + str(mass))
 
 for i in range(len(mass)):
     if max < mass[i]:
         max = mass[i]
 
-print(max)
+print("Максимум " + str(max))

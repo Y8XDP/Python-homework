@@ -4,6 +4,16 @@ val = str(input())
 
 #print(mass[mass.index(val)])
 
-for i in mass:
-    if val == str(i): print(i)
-    else: print("Не найдено")
+isExist = False
+valIndex = -1;
+
+for i in range(len(mass)):
+    if val == str(mass[i]):
+        isExist = True
+        valIndex = i
+
+if isExist:
+    print("Число " + str(val) + " имеет индекс " + str(valIndex))
+else:
+    print("Число не найдено")
+

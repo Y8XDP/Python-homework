@@ -13,6 +13,6 @@ else:
     s = False
 
 if s:
-    print("Простое")
+    print("Число " + str(int(k)) + " простое")
 else:
-    print("Не простое")
+    print("Число " + str(k) + " не простое")
