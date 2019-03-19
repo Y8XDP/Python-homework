@@ -1,11 +1,17 @@
-import math
+import random
 
-x = float(input())
-y = float(input())
+mass = {}
 
-t = math.sqrt(pow(x,2) + pow(y, 2))
+for i in range(15):
+    mass[i] = random.randint(0, 100)
 
-if t <= 1:
-    print("Попадает")
-else:
-    print("Не попадает")
+max = mass[0]
+min = mass[0]
+
+for i in range(len(mass)):
+    if max < mass[i]:
+        max = mass[i]
+    if min > mass[i]:
+        min = mass[i]
+
+print(max - min)

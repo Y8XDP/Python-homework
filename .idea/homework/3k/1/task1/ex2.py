@@ -1,7 +1,7 @@
 n = float(input())
 m = float(input())
 
-m = m/n
+m = m*n
 
 if m > n:
     print(str(m) + ">" + str(n))
@@ -10,4 +10,4 @@ elif m == n:
 else:
     print(str(m) + "<" + str(n))
 
-n -= 1
+n += 1

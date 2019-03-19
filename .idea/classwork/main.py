@@ -1,10 +1,7 @@
-import time
+def facu(a):
+    for i in range(a - 1):
+        a *= i + 1
 
-def printLetters(str):
-    while True:
-        for i in str:
-            print(i)
-            time.sleep(0.3)
-        print("\n")
+    return a
 
-printLetters("Егор Петух".upper())
+print(facu(int(input())))
